@@ -1,4 +1,12 @@
-{ stdenv, lib, fetchFromGitHub, php, pihole, pihole-ftl, procps }:
+{
+  stdenv,
+  lib,
+  fetchFromGitHub,
+  php,
+  pihole,
+  pihole-ftl,
+  procps,
+}:
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "pihole-web";
