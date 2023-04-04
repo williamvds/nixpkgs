@@ -1310,6 +1310,15 @@
   "module-services-input-methods-kime": [
     "index.html#module-services-input-methods-kime"
   ],
+  "module-services-networking-pihole-ftl": [
+    "index.html#module-services-networking-pihole-ftl"
+  ],
+  "module-services-networking-pihole-ftl-administration": [
+    "index.html#module-services-networking-pihole-ftl-administration"
+  ],
+  "module-services-networking-pihole-ftl-configuration": [
+    "index.html#module-services-networking-pihole-ftl-configuration"
+  ],
   "ch-profiles": [
     "index.html#ch-profiles"
   ],

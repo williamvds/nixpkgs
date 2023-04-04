@@ -1,13 +1,14 @@
-{ lib
-, stdenv
-, fetchFromGitHub
-, cmake
-, gmp
-, libidn
-, nettle
-, readline
-, ncurses
-, xxd
+{
+  lib,
+  stdenv,
+  fetchFromGitHub,
+  cmake,
+  gmp,
+  libidn,
+  nettle,
+  readline,
+  ncurses,
+  xxd,
 }:
 
 stdenv.mkDerivation (finalAttrs: {
@@ -28,9 +29,18 @@ stdenv.mkDerivation (finalAttrs: {
     ./0002-fix-use-after-free.patch
   ];
 
-  nativeBuildInputs = [ cmake xxd ];
+  nativeBuildInputs = [
+    cmake
+    xxd
+  ];
 
-  buildInputs = [ gmp libidn nettle readline ncurses ];
+  buildInputs = [
+    gmp
+    libidn
+    nettle
+    readline
+    ncurses
+  ];
 
   postPatch = [
     # Swap the static library suffix options to shared for non-static builds
